@@ -158,6 +158,7 @@
 
           rayIntersection.PRNGStates = reflectionRayIntersection.PRNGStates;
           color = ScatteringPDF(origin, direction, t, normalWS, rayDescriptor.Direction) * reflectionRayIntersection.color / pdf;
+          color = max(float4(0, 0, 0, 0), color);
         }
 
         rayIntersection.color = texColor * 0.5f * color;
