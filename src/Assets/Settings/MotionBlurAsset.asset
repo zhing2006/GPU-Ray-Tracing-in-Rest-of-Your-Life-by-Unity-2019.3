@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea1938708fbadf4bbdf90e2af94b011, type: 3}
+  m_Name: MotionBlurAsset
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4807578003741378534, guid: 4df9ccc262bcb90409a91fdc22cb34ce, type: 3}
