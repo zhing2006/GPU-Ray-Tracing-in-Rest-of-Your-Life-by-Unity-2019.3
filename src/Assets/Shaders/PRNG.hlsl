@@ -49,6 +49,16 @@ float3 GetRandomInUnitSphere(inout uint4 states)
   return float3(x, y, z);
 }
 
+float3 GetRandomOnUnitSphere(inout uint4 states)
+{
+  float r1 = GetRandomValue(states);
+  float r2 = GetRandomValue(states);
+  float x = cos(2.0f * (float)M_PI * r1) * 2.0f * sqrt(r2 * (1.0f - r2));
+  float y = sin(2.0f * (float)M_PI * r1) * 2.0f * sqrt(r2 * (1.0f - r2));
+  float z = 1.0f - 2.0f * r2;
+  return float3(x, y, z);
+}
+
 float2 GetRandomInUnitDisk(inout uint4 states) {
   float a = GetRandomValue(states) * 2.0f * (float)M_PI;
   float r = sqrt(GetRandomValue(states));

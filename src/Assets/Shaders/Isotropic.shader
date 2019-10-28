@@ -111,7 +111,7 @@
         {
           const float t = t1 + hitDistance;
           rayDescriptor.Origin = rayDescriptor.Origin + t * rayDescriptor.Direction;
-          rayDescriptor.Direction = GetRandomInUnitSphere(rayIntersection.PRNGStates);
+          rayDescriptor.Direction = GetRandomOnUnitSphere(rayIntersection.PRNGStates);
           rayDescriptor.TMin = 1e-5f;
           rayDescriptor.TMax = _CameraFarDistance;
 
